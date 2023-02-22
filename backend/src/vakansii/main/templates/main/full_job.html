@@ -1,0 +1,31 @@
+{% extends 'main/Base.html' %} 
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+            <div class="blockquote-custom-icon bg-info shadow-sm">
+                <i class="fa fa-quote-left text-white"></i></div>
+                {% if post.photo %}
+                <p><img class="img-article-left" src="{{post.photo.url}}"></p>
+                {% endif %}
+                {{post.content|linebreaks}}
+                <a href="" class="myButton">Откликнуться</a>
+                <a href="#" class="myButton">Контакты</a>
+        </blockquote>
+        <div class="d-flex flex-column min-vh-100">
+            <div class="wrapper flex-grow-1"></div>
+    <footer class="footer">
+        <a href="https://github.com/shinadsu">shinadsu</a>
+    </footer>
+        </div>
+{% endblock %}
+
+
+        <h1>{{post.title}}</h1>
+
+        {% if post.photo %}
+        <p><img class="img-article-left" src="{{post.photo.url}}"></p>
+        {% endif %}
+        
+        {{post.content|linebreaks}}
