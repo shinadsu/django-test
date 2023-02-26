@@ -1,7 +1,7 @@
 # django-test
 
 1.  Install Python
-Django is a Python web framework, thus requiring Python to be installed on your machine. At the time of writing, Python 3.8 is the latest version.
+Django is a Python web framework, thus requiring Python to be installed on your machine. At the time of writing, Python 3.11.2 is the latest version.
 
 To install Python on your machine go to https://www.python.org/downloads/. The website should offer you a download button for the latest Python version. Download the executable installer and run it. Check the boxes next to “Install launcher for all users (recommended)” then click “Install Now”.
 
